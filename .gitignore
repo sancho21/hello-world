@@ -1,6 +1,14 @@
-.gradle
-.settings
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.settings/
 .classpath
 .project
-bin
-build
+
+# Gradle
+.gradle/
+bin/
+build/
