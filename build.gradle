@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.6
+version = '1.0'
+
+jar {
+  manifest {
+    attributes 'Implementation-Title': 'Gradle Quickstart',
+               'Implementation-Version': version
+  }
+}
+
+repositories {
+  maven { url 'https://collaborate.bt.com/artefacts/content/groups/public' }
+  maven { url 'https://collaborate.bt.com/artefacts/content/repositories/thirdparty' }
+  mavenCentral()
+}
+
+dependencies {
+  testCompile('junit:junit:4.12')
+}
